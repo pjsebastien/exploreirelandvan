@@ -1,0 +1,237 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply font-sans text-gray-800 antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif font-semibold text-emerald-900;
+  }
+}
+
+@layer components {
+  /* Boutons principaux */
+  .btn-primary {
+    @apply inline-flex items-center justify-center px-6 py-3 text-base font-medium text-white bg-emerald-600 rounded-lg shadow-md hover:bg-emerald-700 hover:shadow-lg transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center px-6 py-3 text-base font-medium text-emerald-700 bg-white border-2 border-emerald-600 rounded-lg hover:bg-emerald-50 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2;
+  }
+
+  .btn-cta {
+    @apply inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-emerald-900 bg-sand-400 rounded-lg shadow-lg hover:bg-sand-500 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-0.5;
+  }
+
+  /* Conteneurs */
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  /* Sections */
+  .section-padding {
+    @apply py-16 md:py-24;
+  }
+
+  /* Cards */
+  .card {
+    @apply bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden;
+  }
+
+  .card-elevated {
+    @apply bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden transform hover:-translate-y-1;
+  }
+
+  /* Liens internes */
+  .internal-link {
+    @apply text-emerald-600 hover:text-emerald-800 underline decoration-emerald-300 hover:decoration-emerald-600 transition-colors duration-200;
+  }
+
+  /* Badges */
+  .badge {
+    @apply inline-flex items-center px-3 py-1 rounded-full text-sm font-medium;
+  }
+
+  .badge-emerald {
+    @apply badge bg-emerald-100 text-emerald-800;
+  }
+
+  .badge-ocean {
+    @apply badge bg-ocean-100 text-ocean-800;
+  }
+
+  .badge-sand {
+    @apply badge bg-sand-100 text-sand-800;
+  }
+}
+
+@layer utilities {
+  /* Animation d'apparition au scroll */
+  .animate-on-scroll {
+    @apply opacity-0;
+  }
+
+  .animate-on-scroll.visible {
+    @apply animate-fade-in-up;
+  }
+
+  /* Gradient backgrounds */
+  .gradient-emerald {
+    @apply bg-gradient-to-br from-emerald-600 via-emerald-700 to-emerald-900;
+  }
+
+  .gradient-ocean {
+    @apply bg-gradient-to-br from-ocean-500 via-ocean-600 to-ocean-800;
+  }
+
+  .gradient-celtic {
+    @apply bg-gradient-to-br from-celtic-500 via-celtic-600 to-celtic-800;
+  }
+
+  /* Text gradient */
+  .text-gradient-emerald {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-emerald-600 to-emerald-800;
+  }
+
+  /* Overlay pour images */
+  .overlay-dark {
+    @apply absolute inset-0 bg-black/40;
+  }
+
+  .overlay-gradient {
+    @apply absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent;
+  }
+}
+
+/* Styles pour le fil d'Ariane */
+.breadcrumb-separator::before {
+  content: '/';
+  @apply mx-2 text-gray-400;
+}
+
+/* Animation de l'accordéon FAQ */
+.faq-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+
+.faq-content.open {
+  max-height: 500px;
+}
+
+/* Styles pour les tableaux */
+.table-responsive {
+  @apply w-full overflow-x-auto;
+}
+
+.table-custom {
+  @apply w-full text-left border-collapse;
+}
+
+.table-custom th {
+  @apply px-4 py-3 bg-emerald-50 text-emerald-900 font-semibold border-b-2 border-emerald-200;
+}
+
+.table-custom td {
+  @apply px-4 py-3 border-b border-gray-200;
+}
+
+.table-custom tr:hover td {
+  @apply bg-emerald-50/50;
+}
+
+/* Scroll indicator pour mobile */
+@media (max-width: 640px) {
+  .table-responsive::after {
+    content: '→ Faites défiler';
+    @apply block text-sm text-gray-500 text-center mt-2;
+  }
+}
+
+/* Hero Animations */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-in-right {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.6s ease-out forwards;
+}
+
+.animate-slide-up {
+  animation: slide-up 0.8s ease-out forwards;
+}
+
+.animate-slide-in-right {
+  animation: slide-in-right 0.6s ease-out forwards;
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animation-delay-100 {
+  animation-delay: 0.1s;
+  opacity: 0;
+}
+
+.animation-delay-200 {
+  animation-delay: 0.2s;
+  opacity: 0;
+}
+
+.animation-delay-300 {
+  animation-delay: 0.3s;
+  opacity: 0;
+}
+
+.animation-delay-400 {
+  animation-delay: 0.4s;
+  opacity: 0;
+}
