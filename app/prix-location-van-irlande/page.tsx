@@ -8,14 +8,14 @@ import PriceTable from '@/components/PriceTable'
 import LinkCard from '@/components/LinkCard'
 
 export const metadata: Metadata = {
-  title: 'Prix location van Irlande | Tarifs dès 65€/jour + comparatif loueurs',
+  title: 'Prix location van Irlande dès 65€/jour',
   description: 'Découvrez les prix de location de van en Irlande. Comparatif par saison, type de véhicule, astuces pour économiser et budget complet pour votre road trip.',
   alternates: {
     canonical: 'https://www.exploreirelandvan.com/prix-location-van-irlande/',
   },
   openGraph: {
-    title: 'Prix location van Irlande | Tarifs dès 65€/jour + comparatif loueurs',
-    description: 'Tarifs de location de van en Irlande par saison et type de véhicule.',
+    title: 'Prix location van Irlande dès 65€/jour',
+    description: 'Découvrez les prix de location de van en Irlande. Comparatif par saison, type de véhicule et astuces pour économiser.',
     url: 'https://www.exploreirelandvan.com/prix-location-van-irlande/',
     type: 'article',
     images: [
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Prix location van Irlande | Tarifs dès 65€/jour + comparatif loueurs',
+    title: 'Prix location van Irlande dès 65€/jour',
     description: 'Découvrez les prix de location de van en Irlande. Comparatif par saison, type de véhicule, astuces pour économiser et budget complet pour votre road trip.',
     images: ['https://www.exploreirelandvan.com/images/van-campagne.jpg'],
   },
@@ -132,7 +132,8 @@ export default function PrixPage() {
               },
             },
             datePublished: '2025-01-15',
-            dateModified: '2025-02-16',
+            dateModified: '2026-02-19',
+            inLanguage: 'fr',
             mainEntityOfPage: {
               '@type': 'WebPage',
               '@id': 'https://www.exploreirelandvan.com/prix-location-van-irlande/',

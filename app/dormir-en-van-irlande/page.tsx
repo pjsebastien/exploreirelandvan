@@ -7,14 +7,14 @@ import AffiliateCTA from '@/components/AffiliateCTA'
 import FeatureCard from '@/components/FeatureCard'
 
 export const metadata: Metadata = {
-  title: 'Dormir en van en Irlande | Où passer la nuit ? Aires, spots et campings',
+  title: 'Où dormir en van en Irlande ?',
   description: 'Tout savoir pour dormir en van en Irlande : aires de camping-car, campings, spots sauvages autorisés, applications et conseils pour vos nuits irlandaises.',
   alternates: {
     canonical: 'https://www.exploreirelandvan.com/dormir-en-van-irlande/',
   },
   openGraph: {
-    title: 'Dormir en van en Irlande | Où passer la nuit ? Aires, spots et campings',
-    description: 'Tout savoir pour dormir en van en Irlande : aires, campings et spots.',
+    title: 'Où dormir en van en Irlande ?',
+    description: 'Tout savoir pour dormir en van en Irlande : aires de camping-car, campings, spots sauvages autorisés, applications et conseils pour vos nuits.',
     url: 'https://www.exploreirelandvan.com/dormir-en-van-irlande/',
     type: 'article',
     images: [
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Dormir en van en Irlande | Où passer la nuit ? Aires, spots et campings',
+    title: 'Où dormir en van en Irlande ?',
     description: 'Tout savoir pour dormir en van en Irlande : aires de camping-car, campings, spots sauvages autorisés, applications et conseils pour vos nuits irlandaises.',
     images: ['https://www.exploreirelandvan.com/images/van-sunset.jpg'],
   },
@@ -124,7 +124,8 @@ export default function DormirPage() {
               },
             },
             datePublished: '2025-01-15',
-            dateModified: '2025-02-16',
+            dateModified: '2026-02-19',
+            inLanguage: 'fr',
             mainEntityOfPage: {
               '@type': 'WebPage',
               '@id': 'https://www.exploreirelandvan.com/dormir-en-van-irlande/',
@@ -363,6 +364,157 @@ export default function DormirPage() {
                   Téléchargez les cartes hors ligne avant votre voyage. La couverture réseau peut être limitée dans les zones reculées de l'ouest irlandais, là où se trouvent souvent les plus beaux spots.
                 </p>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Regional Guide */}
+      <section className="section-padding bg-white">
+        <div className="container-custom">
+          <SectionTitle
+            title="Où dormir par région"
+            subtitle="Les meilleures zones pour passer la nuit selon votre itinéraire en Irlande."
+          />
+
+          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            <div className="bg-gray-50 rounded-xl p-6">
+              <h3 className="text-xl font-serif font-bold text-emerald-900 mb-3">Côte ouest (Wild Atlantic Way)</h3>
+              <p className="text-gray-600 mb-4">
+                La côte ouest offre les plus beaux spots sauvages d'Irlande. Les parkings de plage du <strong>Connemara</strong>, les aires autour des <strong>falaises de Moher</strong> et les ports de pêche du <strong>Donegal</strong> sont particulièrement appréciés des vanlifers. Attention en haute saison : les spots populaires se remplissent vite.
+              </p>
+              <p className="text-sm text-emerald-700 font-medium">Campings recommandés : Clifden Eco Beach, Salthill Caravan Park, Nagle's Doolin</p>
+            </div>
+
+            <div className="bg-gray-50 rounded-xl p-6">
+              <h3 className="text-xl font-serif font-bold text-emerald-900 mb-3">Sud-ouest (Kerry & Cork)</h3>
+              <p className="text-gray-600 mb-4">
+                Le <strong>Ring of Kerry</strong> et la <strong>péninsule de Dingle</strong> regorgent d'emplacements avec vue sur l'océan. Les campings y sont bien équipés et les spots sauvages tolérés le long de la côte hors zones protégées. Le comté de <strong>Cork</strong> offre aussi de belles alternatives le long de la côte sud.
+              </p>
+              <p className="text-sm text-emerald-700 font-medium">Campings recommandés : Mannix Point (Cahersiveen), Wave Crest (Caherdaniel)</p>
+            </div>
+
+            <div className="bg-gray-50 rounded-xl p-6">
+              <h3 className="text-xl font-serif font-bold text-emerald-900 mb-3">Est et Dublin</h3>
+              <p className="text-gray-600 mb-4">
+                Autour de <strong>Dublin</strong>, les options de stationnement nocturne sont plus limitées. Privilégiez les campings officiels comme Camac Valley. Les comtés de <strong>Wicklow</strong> et <strong>Wexford</strong> offrent de belles alternatives nature avec des campings plus tranquilles et des spots en bord de mer.
+              </p>
+              <p className="text-sm text-emerald-700 font-medium">Campings recommandés : Camac Valley (Dublin), Roundwood Caravan Park (Wicklow)</p>
+            </div>
+
+            <div className="bg-gray-50 rounded-xl p-6">
+              <h3 className="text-xl font-serif font-bold text-emerald-900 mb-3">Nord et Irlande du Nord</h3>
+              <p className="text-gray-600 mb-4">
+                Le <strong>Donegal</strong> est un paradis pour le camping sauvage : peu de monde, des paysages époustouflants et une tolérance élevée. En <strong>Irlande du Nord</strong>, la réglementation est plus stricte (loi britannique), mais des campings de qualité jalonnent la <strong>Causeway Coastal Route</strong>.
+              </p>
+              <p className="text-sm text-emerald-700 font-medium">Campings recommandés : Downings Bay, Cushendall Caravan Park</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Budget Comparison */}
+      <section className="section-padding bg-gray-50">
+        <div className="container-custom">
+          <SectionTitle
+            title="Combien coûte une nuit en van ?"
+            subtitle="Comparatif des coûts selon le type d'hébergement."
+          />
+
+          <div className="max-w-3xl mx-auto">
+            <div className="bg-white rounded-xl shadow-lg overflow-hidden">
+              <div className="bg-emerald-600 px-6 py-4">
+                <h3 className="text-lg font-semibold text-white">Coût par nuit en Irlande</h3>
+              </div>
+              <div className="divide-y divide-gray-100">
+                <div className="flex items-center justify-between px-6 py-4">
+                  <div>
+                    <p className="font-medium text-gray-900">Camping traditionnel</p>
+                    <p className="text-sm text-gray-500">Tous services inclus</p>
+                  </div>
+                  <span className="font-semibold text-emerald-600">20-35€</span>
+                </div>
+                <div className="flex items-center justify-between px-6 py-4">
+                  <div>
+                    <p className="font-medium text-gray-900">Camping premium / glamping</p>
+                    <p className="text-sm text-gray-500">Emplacements avec vue, piscine</p>
+                  </div>
+                  <span className="font-semibold text-emerald-600">35-50€</span>
+                </div>
+                <div className="flex items-center justify-between px-6 py-4">
+                  <div>
+                    <p className="font-medium text-gray-900">Aire de services</p>
+                    <p className="text-sm text-gray-500">Eau, vidange, électricité basique</p>
+                  </div>
+                  <span className="font-semibold text-emerald-600">5-15€</span>
+                </div>
+                <div className="flex items-center justify-between px-6 py-4">
+                  <div>
+                    <p className="font-medium text-gray-900">Chez l'habitant (Homecamper)</p>
+                    <p className="text-sm text-gray-500">Accès aux commodités</p>
+                  </div>
+                  <span className="font-semibold text-emerald-600">10-20€</span>
+                </div>
+                <div className="flex items-center justify-between px-6 py-4 bg-emerald-50">
+                  <div>
+                    <p className="font-medium text-gray-900">Spot sauvage / parking gratuit</p>
+                    <p className="text-sm text-gray-500">Aucun service</p>
+                  </div>
+                  <span className="font-semibold text-emerald-600">Gratuit</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="mt-8 prose prose-lg text-gray-600">
+              <p>
+                En alternant spots gratuits et campings, le budget moyen se situe autour de <strong>10-15€ par nuit</strong>. Sur un road trip de 10 jours, cela représente entre 100€ et 150€ pour l'hébergement, un poste bien plus économique qu'un hôtel (80-150€/nuit en Irlande).
+              </p>
+              <p>
+                <strong>Astuce budget :</strong> En basse saison (octobre à avril), de nombreux campings proposent des tarifs réduits de 30 à 50%. Certains offrent même des forfaits semaine intéressants.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Seasonal Advice */}
+      <section className="section-padding bg-white">
+        <div className="container-custom">
+          <SectionTitle
+            title="Dormir en van selon la saison"
+            subtitle="Adaptez votre stratégie de nuit à la période de votre voyage."
+          />
+
+          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            <div className="bg-gray-50 rounded-xl p-6 border-t-4 border-amber-400">
+              <h3 className="text-lg font-semibold text-gray-900 mb-3">Été (juin-août)</h3>
+              <ul className="space-y-2 text-sm text-gray-600">
+                <li>Réservez les campings populaires à l'avance</li>
+                <li>Spots sauvages très demandés sur la côte ouest</li>
+                <li>Coucher du soleil tardif (22h+) : plus de temps pour trouver un spot</li>
+                <li>Moins besoin de chauffage la nuit</li>
+                <li>Attention aux midges (moucherons) en soirée</li>
+              </ul>
+            </div>
+            <div className="bg-gray-50 rounded-xl p-6 border-t-4 border-emerald-500">
+              <h3 className="text-lg font-semibold text-gray-900 mb-3">Printemps / Automne</h3>
+              <ul className="space-y-2 text-sm text-gray-600">
+                <li>Moins de monde : plus de choix de spots</li>
+                <li>Campings souvent moins chers (-30%)</li>
+                <li>Nuits plus fraîches : chauffage indispensable</li>
+                <li>Couchers de soleil spectaculaires</li>
+                <li>Meilleur compromis confort/prix</li>
+              </ul>
+            </div>
+            <div className="bg-gray-50 rounded-xl p-6 border-t-4 border-blue-400">
+              <h3 className="text-lg font-semibold text-gray-900 mb-3">Hiver (nov-mars)</h3>
+              <ul className="space-y-2 text-sm text-gray-600">
+                <li>Beaucoup de campings fermés : vérifiez les ouvertures</li>
+                <li>Spots sauvages souvent déserts</li>
+                <li>Chauffage, isolation et batterie auxiliaire essentiels</li>
+                <li>Journées courtes : anticipez votre spot avant 16h</li>
+                <li>Ambiance magique et très peu de touristes</li>
+              </ul>
             </div>
           </div>
         </div>

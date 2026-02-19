@@ -7,14 +7,14 @@ import AffiliateCTA from '@/components/AffiliateCTA'
 import ItineraryDay from '@/components/ItineraryDay'
 
 export const metadata: Metadata = {
-  title: 'Itinéraire Irlande 10 jours en van | Circuit jour par jour et spots de nuit',
+  title: 'Itinéraire Irlande 10 jours en van',
   description: 'Circuit parfait de 10 jours en van en Irlande : Dublin, Galway, Connemara, falaises de Moher, Ring of Kerry. Étapes jour par jour, distances et spots de nuit inclus.',
   alternates: {
     canonical: 'https://www.exploreirelandvan.com/itineraire-irlande-10-jours-van/',
   },
   openGraph: {
-    title: 'Itinéraire Irlande 10 jours en van | Circuit jour par jour et spots de nuit',
-    description: 'Le circuit parfait de 10 jours en van en Irlande avec étapes jour par jour.',
+    title: 'Itinéraire Irlande 10 jours en van',
+    description: 'Circuit parfait de 10 jours en van en Irlande : Dublin, Galway, Connemara, falaises de Moher, Ring of Kerry. Étapes jour par jour.',
     url: 'https://www.exploreirelandvan.com/itineraire-irlande-10-jours-van/',
     type: 'article',
     images: [
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Itinéraire Irlande 10 jours en van | Circuit jour par jour et spots de nuit',
+    title: 'Itinéraire Irlande 10 jours en van',
     description: 'Circuit parfait de 10 jours en van en Irlande : Dublin, Galway, Connemara, falaises de Moher, Ring of Kerry. Étapes jour par jour, distances et spots de nuit inclus.',
     images: ['https://www.exploreirelandvan.com/images/route-panoramique.jpg'],
   },
@@ -184,7 +184,8 @@ export default function ItinerairePage() {
               },
             },
             datePublished: '2025-01-15',
-            dateModified: '2025-02-16',
+            dateModified: '2026-02-19',
+            inLanguage: 'fr',
             mainEntityOfPage: {
               '@type': 'WebPage',
               '@id': 'https://www.exploreirelandvan.com/itineraire-irlande-10-jours-van/',

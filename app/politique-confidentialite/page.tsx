@@ -3,10 +3,20 @@ import Link from 'next/link'
 import Breadcrumb from '@/components/Breadcrumb'
 
 export const metadata: Metadata = {
-  title: 'Politique de Confidentialité | ExploreIrelandVan',
+  title: 'Politique de confidentialité',
   description: 'Politique de confidentialité du site ExploreIrelandVan.com - Informations sur la collecte et le traitement de vos données personnelles.',
   alternates: {
     canonical: 'https://www.exploreirelandvan.com/politique-confidentialite/',
+  },
+  openGraph: {
+    title: 'Politique de confidentialité | ExploreIrelandVan',
+    description: 'Politique de confidentialité du site ExploreIrelandVan.com - Collecte et traitement de vos données personnelles.',
+    url: 'https://www.exploreirelandvan.com/politique-confidentialite/',
+  },
+  twitter: {
+    card: 'summary',
+    title: 'Politique de confidentialité | ExploreIrelandVan',
+    description: 'Politique de confidentialité du site ExploreIrelandVan.com - Collecte et traitement de vos données personnelles.',
   },
   robots: {
     index: false,

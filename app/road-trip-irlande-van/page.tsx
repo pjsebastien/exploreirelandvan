@@ -8,14 +8,14 @@ import LinkCard from '@/components/LinkCard'
 import FeatureCard from '@/components/FeatureCard'
 
 export const metadata: Metadata = {
-  title: 'Road trip Irlande en van | Circuits, itinéraires et conseils pratiques',
+  title: 'Road trip Irlande en van aménagé',
   description: 'Planifiez votre road trip en Irlande en van aménagé. Circuits détaillés, conseils pratiques, étapes incontournables et astuces pour un voyage inoubliable sur les routes irlandaises.',
   alternates: {
     canonical: 'https://www.exploreirelandvan.com/road-trip-irlande-van/',
   },
   openGraph: {
-    title: 'Road trip Irlande en van | Circuits, itinéraires et conseils pratiques',
-    description: 'Planifiez votre road trip en Irlande en van aménagé. Circuits détaillés et conseils pratiques.',
+    title: 'Road trip Irlande en van aménagé',
+    description: 'Planifiez votre road trip en Irlande en van aménagé. Circuits détaillés, conseils pratiques, étapes incontournables et astuces pour un voyage inoubliable.',
     url: 'https://www.exploreirelandvan.com/road-trip-irlande-van/',
     type: 'article',
     images: [
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Road trip Irlande en van | Circuits, itinéraires et conseils pratiques',
+    title: 'Road trip Irlande en van aménagé',
     description: 'Planifiez votre road trip en Irlande en van aménagé. Circuits détaillés, conseils pratiques, étapes incontournables et astuces pour un voyage inoubliable sur les routes irlandaises.',
     images: ['https://www.exploreirelandvan.com/images/van-route-panoramique.jpg'],
   },
@@ -132,7 +132,8 @@ export default function RoadTripPage() {
               },
             },
             datePublished: '2025-01-15',
-            dateModified: '2025-02-16',
+            dateModified: '2026-02-19',
+            inLanguage: 'fr',
             mainEntityOfPage: {
               '@type': 'WebPage',
               '@id': 'https://www.exploreirelandvan.com/road-trip-irlande-van/',

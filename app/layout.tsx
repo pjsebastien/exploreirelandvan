@@ -25,7 +25,6 @@ export const metadata: Metadata = {
     template: '%s | ExploreIrelandVan',
   },
   description: 'Découvrez l\'Irlande en van aménagé. Guide expert pour votre location de van en Irlande : itinéraires, prix, conseils et meilleurs spots pour un road trip inoubliable.',
-  keywords: ['location van irlande', 'road trip irlande', 'van aménagé irlande', 'camping car irlande', 'wild atlantic way van'],
   authors: [{ name: 'ExploreIrelandVan' }],
   creator: 'ExploreIrelandVan',
   publisher: 'ExploreIrelandVan',
@@ -68,10 +67,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: 'https://www.exploreirelandvan.com',
-    languages: {
-      'fr': 'https://www.exploreirelandvan.com',
-    },
+    canonical: 'https://www.exploreirelandvan.com/',
   },
 }
 

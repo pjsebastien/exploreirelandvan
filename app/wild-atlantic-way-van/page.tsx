@@ -6,25 +6,28 @@ import SectionTitle from '@/components/SectionTitle'
 import AffiliateCTA from '@/components/AffiliateCTA'
 
 export const metadata: Metadata = {
-  title: 'Wild Atlantic Way en van | 2500 km de côte sauvage à explorer',
+  title: 'Wild Atlantic Way en van aménagé',
   description: 'Explorez la Wild Atlantic Way en van aménagé : 2500 km de côte sauvage, meilleurs arrêts, étapes recommandées et conseils pour cette route mythique irlandaise.',
   alternates: {
     canonical: 'https://www.exploreirelandvan.com/wild-atlantic-way-van/',
   },
   openGraph: {
-    title: 'Wild Atlantic Way en van | 2500 km de côte sauvage à explorer',
+    title: 'Wild Atlantic Way en van aménagé',
     description: 'Explorez la Wild Atlantic Way en van aménagé : 2500 km de côte sauvage, meilleurs arrêts, étapes recommandées et conseils pour cette route mythique irlandaise.',
     url: 'https://www.exploreirelandvan.com/wild-atlantic-way-van/',
     type: 'article',
     images: [
       {
         url: 'https://www.exploreirelandvan.com/images/cote-rocheuse.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Côte rocheuse sur la Wild Atlantic Way en Irlande',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Wild Atlantic Way en van | 2500 km de côte sauvage à explorer',
+    title: 'Wild Atlantic Way en van aménagé',
     description: 'Explorez la Wild Atlantic Way en van aménagé : 2500 km de côte sauvage, meilleurs arrêts, étapes recommandées et conseils pour cette route mythique irlandaise.',
     images: ['https://www.exploreirelandvan.com/images/cote-rocheuse.jpg'],
   },
@@ -106,7 +109,8 @@ export default function WildAtlanticWayPage() {
               logo: { '@type': 'ImageObject', url: 'https://www.exploreirelandvan.com/images/favicon.png' },
             },
             datePublished: '2025-01-15',
-            dateModified: '2025-02-16',
+            dateModified: '2026-02-19',
+            inLanguage: 'fr',
             mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://www.exploreirelandvan.com/wild-atlantic-way-van/' },
           }),
         }}

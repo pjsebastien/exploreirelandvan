@@ -3,10 +3,20 @@ import Link from 'next/link'
 import Breadcrumb from '@/components/Breadcrumb'
 
 export const metadata: Metadata = {
-  title: 'Mentions Légales | ExploreIrelandVan',
-  description: 'Mentions légales du site ExploreIrelandVan.com - Informations sur l\'éditeur, l\'hébergeur et les conditions d\'utilisation.',
+  title: 'Mentions légales',
+  description: 'Mentions légales du site ExploreIrelandVan.com - Informations sur l\'éditeur, l\'hébergeur et les conditions d\'utilisation du site.',
   alternates: {
     canonical: 'https://www.exploreirelandvan.com/mentions-legales/',
+  },
+  openGraph: {
+    title: 'Mentions légales | ExploreIrelandVan',
+    description: 'Mentions légales du site ExploreIrelandVan.com - Informations sur l\'éditeur, l\'hébergeur et les conditions d\'utilisation.',
+    url: 'https://www.exploreirelandvan.com/mentions-legales/',
+  },
+  twitter: {
+    card: 'summary',
+    title: 'Mentions légales | ExploreIrelandVan',
+    description: 'Mentions légales du site ExploreIrelandVan.com - Informations sur l\'éditeur et l\'hébergeur.',
   },
   robots: {
     index: false,

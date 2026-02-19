@@ -5,13 +5,13 @@ import SectionTitle from '@/components/SectionTitle'
 import AffiliateCTA from '@/components/AffiliateCTA'
 
 export const metadata: Metadata = {
-  title: 'Camping sauvage Irlande en van | Est-ce autorisé ? Règles et spots',
+  title: 'Camping sauvage en van en Irlande',
   description: 'Tout savoir sur le camping sauvage en van en Irlande : réglementation, zones autorisées, bonnes pratiques et conseils pour bivouaquer en toute légalité.',
   alternates: {
     canonical: 'https://www.exploreirelandvan.com/camping-sauvage-irlande-van/',
   },
   openGraph: {
-    title: 'Camping sauvage Irlande en van | Est-ce autorisé ? Règles et spots',
+    title: 'Camping sauvage en van en Irlande',
     description: 'Tout savoir sur le camping sauvage en van en Irlande : réglementation, zones autorisées, bonnes pratiques et conseils pour bivouaquer en toute légalité.',
     url: 'https://www.exploreirelandvan.com/camping-sauvage-irlande-van/',
     type: 'article',
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Camping sauvage Irlande en van | Est-ce autorisé ? Règles et spots',
+    title: 'Camping sauvage en van en Irlande',
     description: 'Tout savoir sur le camping sauvage en van en Irlande : réglementation, zones autorisées, bonnes pratiques et conseils pour bivouaquer en toute légalité.',
     images: ['https://www.exploreirelandvan.com/images/van-nature-irlande.jpg'],
   },
@@ -60,7 +60,8 @@ export default function CampingSauvagePage() {
               },
             },
             datePublished: '2025-01-15',
-            dateModified: '2025-02-16',
+            dateModified: '2026-02-19',
+            inLanguage: 'fr',
             mainEntityOfPage: {
               '@type': 'WebPage',
               '@id': 'https://www.exploreirelandvan.com/camping-sauvage-irlande-van/',
@@ -190,6 +191,112 @@ export default function CampingSauvagePage() {
                 <li><strong>Système de chauffage</strong> autonome (les nuits irlandaises sont fraîches)</li>
                 <li><strong>Éclairage discret</strong> (LED basse consommation)</li>
               </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Best Regions for Wild Camping */}
+      <section className="section-padding bg-gray-50">
+        <div className="container-custom">
+          <SectionTitle
+            title="Les meilleures régions pour le bivouac"
+            subtitle="Où le camping sauvage est le mieux toléré en Irlande."
+          />
+
+          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            <div className="bg-white rounded-xl p-6 shadow-sm">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-10 h-10 bg-emerald-100 rounded-full flex items-center justify-center">
+                  <svg className="w-5 h-5 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+                  </svg>
+                </div>
+                <h3 className="text-lg font-semibold text-emerald-900">Donegal</h3>
+              </div>
+              <p className="text-gray-600 mb-3">
+                Le comté le moins touristique du nord-ouest est un <strong>paradis pour le bivouac</strong>. Plages désertes comme Malin Beg, parkings côtiers avec vue sur l'Atlantique, et une population locale habituée aux campeurs. La péninsule d'Inishowen et les falaises de Slieve League offrent des spots exceptionnels.
+              </p>
+              <p className="text-sm text-emerald-700 font-medium">Tolérance : Très élevée</p>
+            </div>
+
+            <div className="bg-white rounded-xl p-6 shadow-sm">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-10 h-10 bg-emerald-100 rounded-full flex items-center justify-center">
+                  <svg className="w-5 h-5 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+                  </svg>
+                </div>
+                <h3 className="text-lg font-semibold text-emerald-900">Connemara</h3>
+              </div>
+              <p className="text-gray-600 mb-3">
+                Les vastes landes et les lacs isolés du <strong>Connemara</strong> offrent de nombreuses possibilités de bivouac. Les petits parkings de randonnée autour des <strong>Twelve Bens</strong> et le long de la Sky Road sont des classiques. Évitez le parc national lui-même mais explorez ses alentours.
+              </p>
+              <p className="text-sm text-emerald-700 font-medium">Tolérance : Élevée</p>
+            </div>
+
+            <div className="bg-white rounded-xl p-6 shadow-sm">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-10 h-10 bg-emerald-100 rounded-full flex items-center justify-center">
+                  <svg className="w-5 h-5 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+                  </svg>
+                </div>
+                <h3 className="text-lg font-semibold text-emerald-900">Péninsule de Beara</h3>
+              </div>
+              <p className="text-gray-600 mb-3">
+                Moins fréquentée que le <strong>Ring of Kerry</strong> voisin, la péninsule de Beara est un secret bien gardé. Les routes étroites découragent les grands camping-cars, laissant des spots magnifiques aux vans. Les villages d'Allihies et Eyeries sont particulièrement accueillants envers les vanlifers.
+              </p>
+              <p className="text-sm text-emerald-700 font-medium">Tolérance : Élevée</p>
+            </div>
+
+            <div className="bg-white rounded-xl p-6 shadow-sm">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-10 h-10 bg-emerald-100 rounded-full flex items-center justify-center">
+                  <svg className="w-5 h-5 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+                  </svg>
+                </div>
+                <h3 className="text-lg font-semibold text-emerald-900">Côte du Clare</h3>
+              </div>
+              <p className="text-gray-600 mb-3">
+                Le comté de Clare autour des <strong>falaises de Moher</strong> et du <strong>Burren</strong> offre un mélange unique de spots côtiers et de paysages lunaires. Les aires autour de Doolin et Fanore sont populaires. En haute saison, certains parkings proches de Moher interdisent le stationnement nocturne.
+              </p>
+              <p className="text-sm text-emerald-700 font-medium">Tolérance : Modérée (variable selon saison)</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Seasonal Tips */}
+      <section className="section-padding bg-white">
+        <div className="container-custom">
+          <div className="max-w-4xl mx-auto">
+            <div className="prose prose-lg text-gray-600">
+              <h2>Camping sauvage selon la saison</h2>
+              <p>
+                La période de votre voyage influence fortement votre expérience de bivouac en Irlande :
+              </p>
+
+              <h3>Mai-juin : la période idéale</h3>
+              <p>
+                Les journées sont longues (jusqu'à 22h de clarté en juin), la végétation est luxuriante et les spots sont encore peu fréquentés. Les températures nocturnes oscillent entre 8°C et 12°C : un chauffage d'appoint reste recommandé. C'est la meilleure période pour le camping sauvage en Irlande.
+              </p>
+
+              <h3>Juillet-août : la haute saison</h3>
+              <p>
+                Les spots populaires sont pris d'assaut, surtout sur la Wild Atlantic Way. Arrivez tôt (avant 18h) pour sécuriser votre emplacement. Certaines communes installent des barrières de hauteur sur les parkings en été pour dissuader le stationnement des vans. Privilégiez les zones moins touristiques (Donegal, Beara, côte nord).
+              </p>
+
+              <h3>Septembre-octobre : l'arrière-saison</h3>
+              <p>
+                Excellent compromis : les spots se vident, les couleurs d'automne sont spectaculaires et la tolérance est maximale. Les nuits sont plus fraîches (5-10°C) mais supportables avec un bon équipement. Attention aux tempêtes atlantiques occasionnelles.
+              </p>
+
+              <h3>Novembre-avril : réservé aux aventuriers</h3>
+              <p>
+                Conditions difficiles mais récompensantes : vous serez souvent seul sur les plus beaux spots d'Irlande. Isolation, chauffage performant et batterie auxiliaire puissante sont indispensables. Les journées courtes obligent à anticiper votre spot bien avant le coucher du soleil.
+              </p>
             </div>
           </div>
         </div>
