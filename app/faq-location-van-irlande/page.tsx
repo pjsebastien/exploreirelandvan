@@ -9,7 +9,24 @@ export const metadata: Metadata = {
   title: 'FAQ Location Van Irlande | Questions Fréquentes',
   description: 'Toutes les réponses à vos questions sur la location de van en Irlande : permis, assurance, conduite à gauche, stationnement, budget et conseils pratiques.',
   alternates: {
-    canonical: 'https://www.exploreIrelandvan.com/faq-location-van-irlande/',
+    canonical: 'https://www.exploreirelandvan.com/faq-location-van-irlande/',
+  },
+  openGraph: {
+    title: 'FAQ Location Van Irlande | Questions Fréquentes',
+    description: 'Toutes les réponses à vos questions sur la location de van en Irlande : permis, assurance, conduite à gauche, stationnement, budget et conseils pratiques.',
+    url: 'https://www.exploreirelandvan.com/faq-location-van-irlande/',
+    type: 'article',
+    images: [
+      {
+        url: 'https://www.exploreirelandvan.com/images/van-paysage-vert.jpg',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'FAQ Location Van Irlande | Questions Fréquentes',
+    description: 'Toutes les réponses à vos questions sur la location de van en Irlande : permis, assurance, conduite à gauche, stationnement, budget et conseils pratiques.',
+    images: ['https://www.exploreirelandvan.com/images/van-paysage-vert.jpg'],
   },
 }
 

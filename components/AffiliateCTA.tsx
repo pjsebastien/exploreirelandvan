@@ -33,7 +33,7 @@ export default function AffiliateCTA({
           <a
             href={affiliateLink}
             target="_blank"
-            rel="sponsored noopener"
+            rel="sponsored noopener noreferrer"
             className="btn-cta whitespace-nowrap"
           >
             {buttonText}
@@ -61,7 +61,7 @@ export default function AffiliateCTA({
             <a
               href={affiliateLink}
               target="_blank"
-              rel="sponsored noopener"
+              rel="sponsored noopener noreferrer"
               className="inline-flex items-center text-sm font-medium text-emerald-600 hover:text-emerald-800 transition-colors"
             >
               {buttonText}
@@ -97,7 +97,7 @@ export default function AffiliateCTA({
           <a
             href={affiliateLink}
             target="_blank"
-            rel="sponsored noopener"
+            rel="sponsored noopener noreferrer"
             className="btn-cta"
           >
             {buttonText}

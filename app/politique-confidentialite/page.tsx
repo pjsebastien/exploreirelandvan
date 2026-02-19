@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: 'Politique de Confidentialité | ExploreIrelandVan',
   description: 'Politique de confidentialité du site ExploreIrelandVan.com - Informations sur la collecte et le traitement de vos données personnelles.',
   alternates: {
-    canonical: 'https://www.exploreIrelandvan.com/politique-confidentialite/',
+    canonical: 'https://www.exploreirelandvan.com/politique-confidentialite/',
   },
   robots: {
     index: false,

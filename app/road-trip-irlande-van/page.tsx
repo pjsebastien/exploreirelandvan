@@ -11,13 +11,27 @@ export const metadata: Metadata = {
   title: 'Road trip Irlande en van | Circuits, itinéraires et conseils pratiques',
   description: 'Planifiez votre road trip en Irlande en van aménagé. Circuits détaillés, conseils pratiques, étapes incontournables et astuces pour un voyage inoubliable sur les routes irlandaises.',
   alternates: {
-    canonical: 'https://www.exploreIrelandvan.com/road-trip-irlande-van/',
+    canonical: 'https://www.exploreirelandvan.com/road-trip-irlande-van/',
   },
   openGraph: {
     title: 'Road trip Irlande en van | Circuits, itinéraires et conseils pratiques',
     description: 'Planifiez votre road trip en Irlande en van aménagé. Circuits détaillés et conseils pratiques.',
-    url: 'https://www.exploreIrelandvan.com/road-trip-irlande-van/',
+    url: 'https://www.exploreirelandvan.com/road-trip-irlande-van/',
     type: 'article',
+    images: [
+      {
+        url: 'https://www.exploreirelandvan.com/images/van-route-panoramique.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Van sur une route panoramique irlandaise',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Road trip Irlande en van | Circuits, itinéraires et conseils pratiques',
+    description: 'Planifiez votre road trip en Irlande en van aménagé. Circuits détaillés, conseils pratiques, étapes incontournables et astuces pour un voyage inoubliable sur les routes irlandaises.',
+    images: ['https://www.exploreirelandvan.com/images/van-route-panoramique.jpg'],
   },
 }
 
@@ -105,12 +119,24 @@ export default function RoadTripPage() {
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'Article',
-            headline: 'Road Trip Irlande en Van - Guide Complet',
-            description: 'Guide complet pour planifier votre road trip en Irlande en van aménagé.',
+            headline: 'Road trip Irlande en van : préparez l\'aventure de votre vie',
+            description: 'Planifiez votre road trip en Irlande en van aménagé. Circuits détaillés, conseils pratiques, étapes incontournables et astuces pour un voyage inoubliable sur les routes irlandaises.',
+            image: 'https://www.exploreirelandvan.com/images/van-route-panoramique.jpg',
             author: { '@type': 'Organization', name: 'ExploreIrelandVan' },
-            publisher: { '@type': 'Organization', name: 'ExploreIrelandVan' },
-            datePublished: '2024-01-01',
-            dateModified: '2025-01-15',
+            publisher: {
+              '@type': 'Organization',
+              name: 'ExploreIrelandVan',
+              logo: {
+                '@type': 'ImageObject',
+                url: 'https://www.exploreirelandvan.com/images/favicon.png',
+              },
+            },
+            datePublished: '2025-01-15',
+            dateModified: '2025-02-16',
+            mainEntityOfPage: {
+              '@type': 'WebPage',
+              '@id': 'https://www.exploreirelandvan.com/road-trip-irlande-van/',
+            },
           }),
         }}
       />

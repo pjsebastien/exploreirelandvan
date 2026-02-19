@@ -82,7 +82,7 @@ export default function FloatingCTA() {
         <a
           href={affiliateLink}
           target="_blank"
-          rel="sponsored noopener"
+          rel="sponsored noopener noreferrer"
           className="mt-3 w-full inline-flex items-center justify-center gap-2 px-4 py-2 bg-sand-400 text-emerald-900 font-semibold rounded-lg hover:bg-sand-300 transition-all duration-300 text-sm"
         >
           Voir les offres

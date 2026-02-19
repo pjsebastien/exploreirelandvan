@@ -18,7 +18,7 @@ export default function Breadcrumb({ items, variant = 'dark' }: BreadcrumbProps)
       '@type': 'ListItem',
       position: index + 1,
       name: item.name,
-      item: item.href ? `https://www.exploreIrelandvan.com${item.href}` : undefined,
+      item: item.href ? `https://www.exploreirelandvan.com${item.href}` : undefined,
     })),
   }
 

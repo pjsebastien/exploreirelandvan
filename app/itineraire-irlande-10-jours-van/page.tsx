@@ -10,13 +10,27 @@ export const metadata: Metadata = {
   title: 'Itinéraire Irlande 10 jours en van | Circuit jour par jour et spots de nuit',
   description: 'Circuit parfait de 10 jours en van en Irlande : Dublin, Galway, Connemara, falaises de Moher, Ring of Kerry. Étapes jour par jour, distances et spots de nuit inclus.',
   alternates: {
-    canonical: 'https://www.exploreIrelandvan.com/itineraire-irlande-10-jours-van/',
+    canonical: 'https://www.exploreirelandvan.com/itineraire-irlande-10-jours-van/',
   },
   openGraph: {
     title: 'Itinéraire Irlande 10 jours en van | Circuit jour par jour et spots de nuit',
     description: 'Le circuit parfait de 10 jours en van en Irlande avec étapes jour par jour.',
-    url: 'https://www.exploreIrelandvan.com/itineraire-irlande-10-jours-van/',
+    url: 'https://www.exploreirelandvan.com/itineraire-irlande-10-jours-van/',
     type: 'article',
+    images: [
+      {
+        url: 'https://www.exploreirelandvan.com/images/route-panoramique.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Route panoramique à travers la campagne irlandaise',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Itinéraire Irlande 10 jours en van | Circuit jour par jour et spots de nuit',
+    description: 'Circuit parfait de 10 jours en van en Irlande : Dublin, Galway, Connemara, falaises de Moher, Ring of Kerry. Étapes jour par jour, distances et spots de nuit inclus.',
+    images: ['https://www.exploreirelandvan.com/images/route-panoramique.jpg'],
   },
 }
 
@@ -157,12 +171,24 @@ export default function ItinerairePage() {
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'Article',
-            headline: 'Itinéraire Irlande 10 Jours en Van',
-            description: 'Circuit détaillé de 10 jours en van en Irlande avec étapes jour par jour.',
+            headline: 'Itinéraire Irlande 10 jours en van : le circuit idéal',
+            description: 'Circuit parfait de 10 jours en van en Irlande : Dublin, Galway, Connemara, falaises de Moher, Ring of Kerry. Étapes jour par jour, distances et spots de nuit inclus.',
+            image: 'https://www.exploreirelandvan.com/images/route-panoramique.jpg',
             author: { '@type': 'Organization', name: 'ExploreIrelandVan' },
-            publisher: { '@type': 'Organization', name: 'ExploreIrelandVan' },
-            datePublished: '2024-01-01',
-            dateModified: '2025-01-15',
+            publisher: {
+              '@type': 'Organization',
+              name: 'ExploreIrelandVan',
+              logo: {
+                '@type': 'ImageObject',
+                url: 'https://www.exploreirelandvan.com/images/favicon.png',
+              },
+            },
+            datePublished: '2025-01-15',
+            dateModified: '2025-02-16',
+            mainEntityOfPage: {
+              '@type': 'WebPage',
+              '@id': 'https://www.exploreirelandvan.com/itineraire-irlande-10-jours-van/',
+            },
           }),
         }}
       />

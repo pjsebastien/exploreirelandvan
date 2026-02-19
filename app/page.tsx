@@ -13,13 +13,20 @@ export const metadata: Metadata = {
   title: 'Location van Irlande | Comparez les meilleurs loueurs dès 65€/jour',
   description: 'Louez un van aménagé en Irlande et explorez l\'île d\'émeraude. Comparatif des meilleurs loueurs, itinéraires Wild Atlantic Way, prix et conseils pour votre road trip.',
   alternates: {
-    canonical: 'https://www.exploreIrelandvan.com/',
+    canonical: 'https://www.exploreirelandvan.com/',
   },
   openGraph: {
     title: 'Location van Irlande | Comparez les meilleurs loueurs dès 65€/jour',
     description: 'Louez un van aménagé en Irlande. Comparatif des loueurs, prix et itinéraires pour votre road trip.',
-    url: 'https://www.exploreIrelandvan.com/',
+    url: 'https://www.exploreirelandvan.com/',
     type: 'website',
+    images: [{ url: '/images/van-nature-irlande.jpg', width: 1200, height: 630, alt: 'Van aménagé dans la nature irlandaise' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Location van Irlande | Comparez les meilleurs loueurs dès 65€/jour',
+    description: 'Louez un van aménagé en Irlande et explorez l\'île d\'émeraude. Comparatif des meilleurs loueurs, itinéraires et prix.',
+    images: ['/images/van-nature-irlande.jpg'],
   },
 }
 
@@ -105,30 +112,26 @@ const faqItems = [
 export default function HomePage() {
   return (
     <>
-      {/* Schema.org Article */}
+      {/* Schema.org WebSite + Organization */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             '@context': 'https://schema.org',
-            '@type': 'Article',
-            headline: 'Location Van Irlande - Guide Complet pour votre Road Trip',
-            description: 'Guide complet pour louer un van en Irlande : itinéraires, prix, conseils pratiques et meilleurs spots.',
-            image: 'https://www.exploreIrelandvan.com/images/van-nature-irlande.jpg',
-            author: {
-              '@type': 'Organization',
-              name: 'ExploreIrelandVan',
-            },
+            '@type': 'WebSite',
+            name: 'ExploreIrelandVan',
+            url: 'https://www.exploreirelandvan.com',
+            description: 'Guide expert pour la location de van en Irlande : itinéraires, prix, conseils pratiques et meilleurs spots pour votre road trip.',
+            inLanguage: 'fr',
             publisher: {
               '@type': 'Organization',
               name: 'ExploreIrelandVan',
+              url: 'https://www.exploreirelandvan.com',
               logo: {
                 '@type': 'ImageObject',
-                url: 'https://www.exploreIrelandvan.com/logo.png',
+                url: 'https://www.exploreirelandvan.com/images/favicon.png',
               },
             },
-            datePublished: '2024-01-01',
-            dateModified: '2025-01-15',
           }),
         }}
       />

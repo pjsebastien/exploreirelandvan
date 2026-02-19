@@ -8,7 +8,27 @@ export const metadata: Metadata = {
   title: 'Camping sauvage Irlande en van | Est-ce autorisé ? Règles et spots',
   description: 'Tout savoir sur le camping sauvage en van en Irlande : réglementation, zones autorisées, bonnes pratiques et conseils pour bivouaquer en toute légalité.',
   alternates: {
-    canonical: 'https://www.exploreIrelandvan.com/camping-sauvage-irlande-van/',
+    canonical: 'https://www.exploreirelandvan.com/camping-sauvage-irlande-van/',
+  },
+  openGraph: {
+    title: 'Camping sauvage Irlande en van | Est-ce autorisé ? Règles et spots',
+    description: 'Tout savoir sur le camping sauvage en van en Irlande : réglementation, zones autorisées, bonnes pratiques et conseils pour bivouaquer en toute légalité.',
+    url: 'https://www.exploreirelandvan.com/camping-sauvage-irlande-van/',
+    type: 'article',
+    images: [
+      {
+        url: 'https://www.exploreirelandvan.com/images/van-nature-irlande.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Van aménagé stationné au cœur de la nature en Irlande',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Camping sauvage Irlande en van | Est-ce autorisé ? Règles et spots',
+    description: 'Tout savoir sur le camping sauvage en van en Irlande : réglementation, zones autorisées, bonnes pratiques et conseils pour bivouaquer en toute légalité.',
+    images: ['https://www.exploreirelandvan.com/images/van-nature-irlande.jpg'],
   },
 }
 
@@ -27,9 +47,24 @@ export default function CampingSauvagePage() {
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'Article',
-            headline: 'Camping Sauvage en Irlande en Van',
-            description: 'Guide sur le camping sauvage en van en Irlande.',
+            headline: 'Camping sauvage en Irlande en van : est-ce autorisé ?',
+            description: 'Tout savoir sur le camping sauvage en van en Irlande : réglementation, zones autorisées, bonnes pratiques et conseils pour bivouaquer en toute légalité.',
+            image: 'https://www.exploreirelandvan.com/images/van-nature-irlande.jpg',
             author: { '@type': 'Organization', name: 'ExploreIrelandVan' },
+            publisher: {
+              '@type': 'Organization',
+              name: 'ExploreIrelandVan',
+              logo: {
+                '@type': 'ImageObject',
+                url: 'https://www.exploreirelandvan.com/images/favicon.png',
+              },
+            },
+            datePublished: '2025-01-15',
+            dateModified: '2025-02-16',
+            mainEntityOfPage: {
+              '@type': 'WebPage',
+              '@id': 'https://www.exploreirelandvan.com/camping-sauvage-irlande-van/',
+            },
           }),
         }}
       />

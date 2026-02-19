@@ -1,12 +1,25 @@
 import type { Metadata } from 'next'
+import { Inter, Playfair_Display } from 'next/font/google'
 import './globals.css'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import CookieBanner from '@/components/CookieBanner'
 import FloatingCTA from '@/components/FloatingCTA'
 
+const inter = Inter({
+  subsets: ['latin'],
+  variable: '--font-inter',
+  display: 'swap',
+})
+
+const playfair = Playfair_Display({
+  subsets: ['latin'],
+  variable: '--font-playfair',
+  display: 'swap',
+})
+
 export const metadata: Metadata = {
-  metadataBase: new URL('https://www.exploreIrelandvan.com'),
+  metadataBase: new URL('https://www.exploreirelandvan.com'),
   title: {
     default: 'Location Van Irlande | Road Trip en Van',
     template: '%s | ExploreIrelandVan',
@@ -24,7 +37,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'fr_FR',
-    url: 'https://www.exploreIrelandvan.com',
+    url: 'https://www.exploreirelandvan.com',
     siteName: 'ExploreIrelandVan',
     title: 'Location Van Irlande | Road Trip en Van',
     description: 'Découvrez l\'Irlande en van aménagé. Guide expert pour votre location de van en Irlande.',
@@ -55,10 +68,10 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: 'https://www.exploreIrelandvan.com',
-  },
-  verification: {
-    google: 'votre-code-verification-google',
+    canonical: 'https://www.exploreirelandvan.com',
+    languages: {
+      'fr': 'https://www.exploreirelandvan.com',
+    },
   },
 }
 
@@ -68,14 +81,17 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="fr">
+    <html lang="fr" className={`${inter.variable} ${playfair.variable}`}>
       <head>
         <link rel="icon" href="/images/favicon.png" type="image/png" />
         <link rel="apple-touch-icon" href="/images/favicon.png" />
       </head>
       <body className="min-h-screen flex flex-col bg-white">
+        <a href="#main-content" className="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-[100] focus:px-4 focus:py-2 focus:bg-emerald-600 focus:text-white focus:rounded-lg">
+          Aller au contenu principal
+        </a>
         <Header />
-        <main className="flex-grow">
+        <main id="main-content" className="flex-grow">
           {children}
         </main>
         <Footer />

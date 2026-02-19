@@ -22,10 +22,10 @@ export default function PriceTable({ title, rows }: PriceTableProps) {
         <table className="table-custom">
           <thead>
             <tr>
-              <th>Véhicule</th>
-              <th>Capacité</th>
-              <th>Équipements</th>
-              <th>Prix/jour</th>
+              <th scope="col">Véhicule</th>
+              <th scope="col">Capacité</th>
+              <th scope="col">Équipements</th>
+              <th scope="col">Prix/jour</th>
             </tr>
           </thead>
           <tbody>

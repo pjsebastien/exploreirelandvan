@@ -31,6 +31,7 @@ export default function LinkCard({
             fill
             className="object-cover group-hover:scale-105 transition-transform duration-500"
             loading="lazy"
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           />
           {badge && (
             <div className="absolute top-3 right-3 bg-emerald-600 text-white text-xs font-semibold px-3 py-1 rounded-full">

@@ -35,6 +35,7 @@ export default function ItineraryDay({
               fill
               className="object-cover"
               loading="lazy"
+              sizes="(max-width: 1024px) 100vw, 40vw"
             />
             <div className="absolute top-4 left-4 w-14 h-14 bg-emerald-600 rounded-full flex items-center justify-center shadow-lg">
               <span className="text-white font-bold text-lg">J{day}</span>

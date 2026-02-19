@@ -28,7 +28,7 @@ export default function CookieBanner() {
   if (!isVisible) return null
 
   return (
-    <div className="fixed bottom-0 left-0 right-0 z-50 p-4 animate-slide-up">
+    <div role="dialog" aria-label="Consentement aux cookies" className="fixed bottom-0 left-0 right-0 z-50 p-4 animate-slide-up">
       <div className="container-custom">
         <div className="bg-white rounded-xl shadow-2xl border border-gray-200 p-4 md:p-5 max-w-2xl mx-auto md:mx-0">
           <div className="flex flex-col md:flex-row md:items-center gap-4">

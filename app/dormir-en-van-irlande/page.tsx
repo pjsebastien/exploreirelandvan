@@ -10,13 +10,27 @@ export const metadata: Metadata = {
   title: 'Dormir en van en Irlande | Où passer la nuit ? Aires, spots et campings',
   description: 'Tout savoir pour dormir en van en Irlande : aires de camping-car, campings, spots sauvages autorisés, applications et conseils pour vos nuits irlandaises.',
   alternates: {
-    canonical: 'https://www.exploreIrelandvan.com/dormir-en-van-irlande/',
+    canonical: 'https://www.exploreirelandvan.com/dormir-en-van-irlande/',
   },
   openGraph: {
     title: 'Dormir en van en Irlande | Où passer la nuit ? Aires, spots et campings',
     description: 'Tout savoir pour dormir en van en Irlande : aires, campings et spots.',
-    url: 'https://www.exploreIrelandvan.com/dormir-en-van-irlande/',
+    url: 'https://www.exploreirelandvan.com/dormir-en-van-irlande/',
     type: 'article',
+    images: [
+      {
+        url: 'https://www.exploreirelandvan.com/images/van-sunset.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Van aménagé au coucher du soleil en Irlande',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Dormir en van en Irlande | Où passer la nuit ? Aires, spots et campings',
+    description: 'Tout savoir pour dormir en van en Irlande : aires de camping-car, campings, spots sauvages autorisés, applications et conseils pour vos nuits irlandaises.',
+    images: ['https://www.exploreirelandvan.com/images/van-sunset.jpg'],
   },
 }
 
@@ -97,12 +111,24 @@ export default function DormirPage() {
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'Article',
-            headline: 'Dormir en Van en Irlande',
-            description: 'Guide complet pour dormir en van en Irlande.',
+            headline: 'Dormir en van en Irlande : où passer la nuit ?',
+            description: 'Tout savoir pour dormir en van en Irlande : aires de camping-car, campings, spots sauvages autorisés, applications et conseils pour vos nuits irlandaises.',
+            image: 'https://www.exploreirelandvan.com/images/van-sunset.jpg',
             author: { '@type': 'Organization', name: 'ExploreIrelandVan' },
-            publisher: { '@type': 'Organization', name: 'ExploreIrelandVan' },
-            datePublished: '2024-01-01',
-            dateModified: '2025-01-15',
+            publisher: {
+              '@type': 'Organization',
+              name: 'ExploreIrelandVan',
+              logo: {
+                '@type': 'ImageObject',
+                url: 'https://www.exploreirelandvan.com/images/favicon.png',
+              },
+            },
+            datePublished: '2025-01-15',
+            dateModified: '2025-02-16',
+            mainEntityOfPage: {
+              '@type': 'WebPage',
+              '@id': 'https://www.exploreirelandvan.com/dormir-en-van-irlande/',
+            },
           }),
         }}
       />

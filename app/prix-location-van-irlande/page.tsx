@@ -5,18 +5,33 @@ import SectionTitle from '@/components/SectionTitle'
 import AffiliateCTA from '@/components/AffiliateCTA'
 import SeasonCard from '@/components/SeasonCard'
 import PriceTable from '@/components/PriceTable'
+import LinkCard from '@/components/LinkCard'
 
 export const metadata: Metadata = {
   title: 'Prix location van Irlande | Tarifs dès 65€/jour + comparatif loueurs',
   description: 'Découvrez les prix de location de van en Irlande. Comparatif par saison, type de véhicule, astuces pour économiser et budget complet pour votre road trip.',
   alternates: {
-    canonical: 'https://www.exploreIrelandvan.com/prix-location-van-irlande/',
+    canonical: 'https://www.exploreirelandvan.com/prix-location-van-irlande/',
   },
   openGraph: {
     title: 'Prix location van Irlande | Tarifs dès 65€/jour + comparatif loueurs',
     description: 'Tarifs de location de van en Irlande par saison et type de véhicule.',
-    url: 'https://www.exploreIrelandvan.com/prix-location-van-irlande/',
+    url: 'https://www.exploreirelandvan.com/prix-location-van-irlande/',
     type: 'article',
+    images: [
+      {
+        url: 'https://www.exploreirelandvan.com/images/van-campagne.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Van aménagé garé dans la campagne irlandaise',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Prix location van Irlande | Tarifs dès 65€/jour + comparatif loueurs',
+    description: 'Découvrez les prix de location de van en Irlande. Comparatif par saison, type de véhicule, astuces pour économiser et budget complet pour votre road trip.',
+    images: ['https://www.exploreirelandvan.com/images/van-campagne.jpg'],
   },
 }
 
@@ -104,12 +119,24 @@ export default function PrixPage() {
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'Article',
-            headline: 'Prix Location Van Irlande',
-            description: 'Guide complet des tarifs de location de van en Irlande.',
+            headline: 'Prix location van Irlande : combien ça coûte vraiment ?',
+            description: 'Découvrez les prix de location de van en Irlande. Comparatif par saison, type de véhicule, astuces pour économiser et budget complet pour votre road trip.',
+            image: 'https://www.exploreirelandvan.com/images/van-campagne.jpg',
             author: { '@type': 'Organization', name: 'ExploreIrelandVan' },
-            publisher: { '@type': 'Organization', name: 'ExploreIrelandVan' },
-            datePublished: '2024-01-01',
-            dateModified: '2025-01-15',
+            publisher: {
+              '@type': 'Organization',
+              name: 'ExploreIrelandVan',
+              logo: {
+                '@type': 'ImageObject',
+                url: 'https://www.exploreirelandvan.com/images/favicon.png',
+              },
+            },
+            datePublished: '2025-01-15',
+            dateModified: '2025-02-16',
+            mainEntityOfPage: {
+              '@type': 'WebPage',
+              '@id': 'https://www.exploreirelandvan.com/prix-location-van-irlande/',
+            },
           }),
         }}
       />
@@ -517,6 +544,41 @@ export default function PrixPage() {
             description="Comparez les offres de plusieurs loueurs irlandais en quelques clics. Réservation flexible et garantie meilleur prix."
             buttonText="Voir les disponibilités"
           />
+        </div>
+      </section>
+
+      {/* Guides associés */}
+      <section className="section-padding bg-white">
+        <div className="container-custom">
+          <SectionTitle
+            title="Guides associés"
+            subtitle="Complétez votre préparation avec nos autres guides pratiques."
+          />
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <LinkCard
+              href="/road-trip-irlande-van/"
+              title="Road trip Irlande en van"
+              description="Circuits détaillés, conseils pratiques et étapes incontournables pour votre aventure irlandaise."
+              imageSrc="/images/van-route-panoramique.jpg"
+              imageAlt="Van sur une route panoramique irlandaise"
+            />
+            <LinkCard
+              href="/itineraire-irlande-10-jours-van/"
+              title="Itinéraire 10 jours"
+              description="Notre circuit recommandé jour par jour pour découvrir les incontournables de l'Irlande."
+              imageSrc="/images/falaises-cote.jpg"
+              imageAlt="Falaises impressionnantes sur la côte irlandaise"
+              badge="Populaire"
+            />
+            <LinkCard
+              href="/dormir-en-van-irlande/"
+              title="Où dormir en van"
+              description="Aires, campings, spots sauvages : tout savoir sur le stationnement nocturne en Irlande."
+              imageSrc="/images/van-paysage-vert.jpg"
+              imageAlt="Van aménagé face aux paysages verdoyants d'Irlande"
+            />
+          </div>
         </div>
       </section>
     </>

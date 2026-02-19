@@ -30,6 +30,7 @@ export default function Header() {
                 width={48}
                 height={48}
                 className="w-full h-full object-cover"
+                priority
               />
             </div>
             <div className="hidden sm:block">
@@ -64,6 +65,7 @@ export default function Header() {
             className="lg:hidden p-2 rounded-lg text-gray-700 hover:bg-emerald-50 transition-colors"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             aria-expanded={isMenuOpen}
+            aria-controls="mobile-navigation"
             aria-label="Menu principal"
           >
             {isMenuOpen ? (
@@ -80,7 +82,7 @@ export default function Header() {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="lg:hidden py-4 border-t border-gray-100">
+          <div id="mobile-navigation" className="lg:hidden py-4 border-t border-gray-100">
             <div className="flex flex-col space-y-1">
               {navigation.map((item) => (
                 <Link
